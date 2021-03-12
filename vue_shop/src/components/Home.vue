@@ -37,7 +37,7 @@
             </template>
 
             <!--以索引值路由跳转，当索引值为path设置时，直接跳转到对应的path，然后路由中又设置了path对应的情况-->
-            <el-menu-item :index="item.path" v-for="subItem in item.children" :key="subItem.id"
+            <el-menu-item :index="'/' + subItem.path"  v-for="subItem in item.children" :key="subItem.id"
 @click="saveNavState(item.path)">         <!--二级菜单的模板区域-->
               <template slot="title">
                 <!--图标-->
