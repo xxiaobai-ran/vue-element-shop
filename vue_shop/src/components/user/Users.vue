@@ -25,7 +25,6 @@
               :data="userlist"
               border
               style="width: 100%"
-              border
               stripe>
         <el-table-column type="index" label="#"></el-table-column>
         <el-table-column prop="username" label="姓名"></el-table-column>

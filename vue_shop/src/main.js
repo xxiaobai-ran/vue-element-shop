@@ -5,6 +5,10 @@ import store from './store'
 import './plugins/element.js'
 import '@/assets/CSS/global.css'
 import ElementUI from 'element-ui'
+import TreeTable from 'vue-table-with-tree-grid'
+Vue.component('tree-table', TreeTable)
+
+
 // import 'element-ui/lib/theme-chalk/index.css'
 import axios from 'axios'
 
