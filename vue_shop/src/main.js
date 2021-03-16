@@ -8,6 +8,9 @@ import ElementUI from 'element-ui'
 import TreeTable from 'vue-table-with-tree-grid'
 //导入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
+//导入时间线
+import Timeline from './plugins/timeline/index'
+import TimelineItem from './plugins/timeline-item/index'
 
 //导入富文本样式required styles
 import 'quill/dist/quill.core.css'
@@ -46,7 +49,7 @@ Vue.filter('dateFormat', function (originVal) {
 
 Vue.config.productionTip = false
 
-Vue.use(ElementUI,VueQuillEditor)
+Vue.use(ElementUI,VueQuillEditor,Timeline,TimelineItem)
 new Vue({
   router,
   store,
